@@ -13,3 +13,7 @@ parameters:
 
     locale:            en
     secret:            ThisTokenIsNotSoSecretChangeIt
+
+    mopa_remote_update_url: http://yourhost
+    mopa_remote_update_user: changethis
+    mopa_remote_update_password: changethat
