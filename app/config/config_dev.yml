@@ -20,7 +20,13 @@ monolog:
             level: info
 
 assetic:
+    debug:          %kernel.debug%
     use_controller: true
+
+services:
+    twig.extension.debug:
+        class: Twig_Extensions_Extension_Debug
+        tags: [{ name: 'twig.extension' }]
 
 #swiftmailer:
 #    delivery_address: me@example.com

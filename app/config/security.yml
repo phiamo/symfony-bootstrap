@@ -16,6 +16,7 @@ security:
                 users:
                     user:  { password: userpass, roles: [ 'ROLE_USER' ] }
                     admin: { password: adminpass, roles: [ 'ROLE_ADMIN' ] }
+                    %mopa_remote_update_user%:  { password: %mopa_remote_update_password%, roles: 'ROLE_REMOTE_UPDATER' }
 
     firewalls:
         dev:
@@ -37,7 +38,12 @@ security:
             #anonymous: ~
             #http_basic:
             #    realm: "Secured Demo Area"
-
+        wsse_secured:
+            pattern:   ^/mopa/update/api/.*
+            wsse:
+                nonce_dir: null
+                lifetime: 300
+                provider: in_memory # the user provider providing you user with the role ROLE_REMOTE_UPDATER
     access_control:
         #- { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY, requires_channel: https }
         #- { path: ^/_internal/secure, roles: IS_AUTHENTICATED_ANONYMOUSLY, ip: 127.0.0.1 }

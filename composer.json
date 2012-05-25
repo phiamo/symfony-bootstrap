@@ -1,6 +1,6 @@
 {
-    "name": "symfony/framework-standard-edition",
-    "description": "The \"Symfony Standard Edition\" distribution",
+    "name": "mopa/symfony-bootstrap",
+    "description": "he \"Symfony Standard Edition\" distribution enriched with twitter/bootstrap2",
     "autoload": {
         "psr-0": { "": "src/" }
     },
@@ -18,17 +18,26 @@
         "sensio/generator-bundle": "dev-master",
         "jms/security-extra-bundle": "1.1.*",
         "jms/di-extra-bundle": "1.0.*"
+        "mopa/bootstrap-bundle": "dev-master",
+        "mopa/bootstrap-sandbox-bundle": "dev-master",
+        "twitter/bootstrap": "master",
+        "knplabs/knp-paginator-bundle": "dev-master",
+        "knplabs/knp-menu-bundle": "dev-master",
+        "craue/formflow-bundle": "dev-master",
+        "mopa/remote-update-bundle": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets"
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+            "Mopa\\Bundle\\BootstrapBundle\\Composer\\ScriptHandler::postInstallSymlinkTwitterBootstrap"
         ],
-        "post-update-cmd": [
+        "post-update-cmd": [ 
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets"
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+            "Mopa\\Bundle\\BootstrapBundle\\Composer\\ScriptHandler::postInstallSymlinkTwitterBootstrap"
         ]
     },
     "config": {
@@ -37,5 +46,19 @@
     "extra": {
         "symfony-app-dir": "app",
         "symfony-web-dir": "web"
-    }
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "version": "master",
+                "name": "twitter/bootstrap",
+                "source": {
+                    "url": "https://github.com/twitter/bootstrap.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        }
+    ]
 }
