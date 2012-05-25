@@ -1,7 +1,7 @@
 Symfony-Bootstrap Edition
 =========================
 
-This is the sandbox of the MopaBootstrapBundle for Symfony2
+This is the Standatd Edition of symfony enriched with twitters/bootstrap by using the MopaBootstrapBundle
 Its intended to kickstart your development and as an alternative to symfony-standard edition (https://github.com/symfony/symfony-standard/tree/master/web) which it is also based on!
 
 To install it just:
@@ -33,8 +33,3 @@ There is a live preview available here:
     http://bootstrap.mohrenweiserpartner.de/mopa/bootstrap
     
 So it should work, "out of the box", but if it doesnt, open issues make PR's etc.
-
-
-
-
->>>>>>> sandbox/master
