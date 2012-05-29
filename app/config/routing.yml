@@ -8,6 +8,6 @@ MopaBootstrapSandbox:
     type:     annotation
     
     
-_welcome:
-    pattern:   /
-    defaults:  { _controller: MopaBootstrapSandboxBundle:Examples:index }
+#_welcome:
+#    pattern:   /
+#    defaults:  { _controller: MopaBootstrapSandboxBundle:Examples:index }

@@ -1,13 +1,20 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-        <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
-</html>
+{% extends 'MopaBootstrapBundle::layout.html.twig' %}
+
+{% block headline %}
+{% block title %}Welcome!{% endblock %}
+{% endblock %}
+
+{% block head_style %}
+    {{ parent() }}
+    {% block stylesheets %}{% endblock %}
+{% endblock head_style %}
+
+
+{% block content %}
+    {% block body %}{% endblock %}
+{% endblock content %}
+
+
+{% block foot_script %}
+    {% block javascripts %}{% endblock %}
+{% endblock foot_script %}
