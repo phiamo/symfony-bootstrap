@@ -4,14 +4,44 @@
         "symfony/symfony":  ">=2.0.10,<2.1.0-dev",
         "doctrine/orm":     ">=2.1.0,<2.2.0-dev",
         "twig/extensions":  "*",
-
         "symfony/assetic-bundle":         "2.0.*",
         "sensio/generator-bundle":        "2.0.*",
         "sensio/framework-extra-bundle":  "2.0.*",
         "sensio/distribution-bundle":     "2.0.*",
-        "jms/security-extra-bundle":      "1.0.*"
+        "jms/security-extra-bundle":      "1.0.*",
+        "mopa/bootstrap-bundle":          "2.0.x-dev",
+        "mopa/bootstrap-sandbox-bundle":  "2.0.x-dev",
+        "twitter/bootstrap":              "dev-master",
+        "knplabs/knp-paginator-bundle":   "v2.0",
+        "knplabs/knp-menu-bundle":        "dev-master",
+        "craue/formflow-bundle":          "1.0.0"
     },
-
+    "repositories": [
+       {
+           "type": "package",
+           "package": {
+               "version": "dev-master",
+               "name": "twitter/bootstrap",
+               "source": {
+                   "url": "https://github.com/twitter/bootstrap.git",
+                   "type": "git",
+                   "reference": "master"
+               },
+               "dist": {
+                   "url": "https://github.com/twitter/bootstrap/zipball/master",
+                   "type": "zip"
+                }
+           }
+       }
+    ],
+    "scripts": {
+       "post-install-cmd": [
+           "Mopa\\Bundle\\BootstrapBundle\\Composer\\ScriptHandler::postInstallSymlinkTwitterBootstrap"
+       ],
+       "post-update-cmd": [
+           "Mopa\\Bundle\\BootstrapBundle\\Composer\\ScriptHandler::postInstallSymlinkTwitterBootstrap"
+       ]
+    },
     "autoload": {
         "psr-0": {
             "Acme": "src/"

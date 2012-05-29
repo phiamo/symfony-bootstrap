@@ -2,3 +2,12 @@
 #_internal:
 #   resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
 #   prefix:   /_internal
+
+MopaBootstrapSandbox:
+    resource: "@MopaBootstrapSandboxBundle/Controller"
+    type:     annotation
+    
+    
+_welcome:
+    pattern:   /
+    defaults:  { _controller: MopaBootstrapSandboxBundle:Examples:index }

@@ -20,19 +20,36 @@ framework:
 twig:
     debug:            %kernel.debug%
     strict_variables: %kernel.debug%
-
+    form:
+        resources:
+            - 'MopaBootstrapBundle:Form:fields.html.twig'
 # Assetic Configuration
 assetic:
     debug:          %kernel.debug%
     use_controller: false
     # java: /usr/bin/java
     filters:
+        less:
+            node: /usr/bin/node
+            node_paths: [/opt/lessc/lib, /usr/lib/node_modules]
+            apply_to: "\.less$"
         cssrewrite: ~
         # closure:
         #     jar: %kernel.root_dir%/java/compiler.jar
         # yui_css:
         #     jar: %kernel.root_dir%/java/yuicompressor-2.4.2.jar
 
+        cssembed:
+            jar: %kernel.root_dir%/Resources/java/cssembed-0.3.6.jar
+            apply_to: "\.css$|\.less$"
+        # closure:
+        #     jar: %kernel.root_dir%/java/compiler.jar
+        yui_css:
+            jar: %kernel.root_dir%/Resources/java/yuicompressor-2.4.6.jar
+            apply_to: "\.css$"
+        yui_js:
+            jar: %kernel.root_dir%/Resources/java/yuicompressor-2.4.6.jar
+        
 # Doctrine Configuration
 doctrine:
     dbal:
@@ -58,3 +75,6 @@ swiftmailer:
 jms_security_extra:
     secure_controllers:  true
     secure_all_services: false
+
+mopa_bootstrap:
+    navbar: ~
