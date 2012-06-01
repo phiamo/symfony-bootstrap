@@ -1,8 +1,8 @@
 Symfony-Bootstrap Edition
 =========================
 
-This is the Standatd Edition of symfony enriched with twitters/bootstrap by using the MopaBootstrapBundle
-Its intended to kickstart your development and as an alternative to symfony-standard edition (https://github.com/symfony/symfony-standard/tree/master/web) which it is also based on!
+This is the Standard Edition of [Symfony2](http://symfony.com/) enriched with [twitters/bootstrap](http://github.com/twitter/bootstrap), by using the [MopaBootstrapBundle](http://github.com/phiamo/MopaBootstrapBundle).
+It is intended to kickstart your development, serving as an alternative to [symfony-standard edition](https://github.com/symfony/symfony-standard/tree/master/web), which is what symfony-bootstrap is based on!
 
 There is a live preview available here: 
     http://bootstrap.mohrenweiserpartner.de/mopa/bootstrap
@@ -20,7 +20,7 @@ Symfony-Bootstrap depends on the following projects:
 Installation
 ------------------
 
-Before installing symfony-bootstrap itself, the following needs to be installed beforehand:
+Before installing symfony-bootstrap, the following needs to be installed beforehand:
 
 - [composer](http://getcomposer.org)
 - [node.js](http://nodejs.org)
@@ -35,5 +35,5 @@ cp app/config/parameters.yml.default app/config/parameters.yml
 composer.phar install
 app/console assetic:dump
 ```
-    
-So it should now work, but if it doesnt, open issues make PR's etc.
+
+It should now work. Unfortunately if you run into any issues, you currently cannot open a new issue for this project, though this may or may not be resolved in the future. Feel free to make PR's.
