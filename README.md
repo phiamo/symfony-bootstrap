@@ -4,6 +4,12 @@ Symfony-Bootstrap Edition
 This is the Standatd Edition of symfony enriched with twitters/bootstrap by using the MopaBootstrapBundle
 Its intended to kickstart your development and as an alternative to symfony-standard edition (https://github.com/symfony/symfony-standard/tree/master/web) which it is also based on!
 
+Requirements:
+
+[node.js](http://nodejs.org)
+[less](http://lesscss.org/)
+[composer](http://getcomposer.org)
+
 To install it just:
 
 ```
