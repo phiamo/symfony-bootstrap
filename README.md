@@ -7,7 +7,9 @@ Its intended to kickstart your development and as an alternative to symfony-stan
 Requirements:
 
 [node.js](http://nodejs.org)
+
 [less](http://lesscss.org/)
+
 [composer](http://getcomposer.org)
 
 To install it just:
