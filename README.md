@@ -36,4 +36,4 @@ composer.phar install
 app/console assetic:dump
 ```
 
-It should now work. Unfortunately if you run into any issues, you currently cannot open a new issue for this project, though this may or may not be resolved in the future. Feel free to make PR's.
+It should now work. If you run into any issues, feel free to open a new issue or make a new pull request.
