@@ -121,7 +121,7 @@
         {
             "package": "mopa/bootstrap-sandbox-bundle",
             "version": "dev-master",
-            "source-reference": "2a13a329151a28ba234a1c9107a8aa1972da75d7"
+            "source-reference": "c105b69ca1891e3fc8a4e3f6a12ceac1a00e8430"
         },
         {
             "package": "mopa/composer-bridge",
