@@ -13,7 +13,7 @@
         "mopa/bootstrap-sandbox-bundle":  "2.0.x-dev",
         "twitter/bootstrap":              "dev-master",
         "knplabs/knp-paginator-bundle":   "v2.0",
-        "knplabs/knp-menu-bundle":        "dev-master",
+        "knplabs/knp-menu-bundle":        "1.1.0",
         "craue/formflow-bundle":          "1.0.0"
     },
     "repositories": [
