@@ -32,6 +32,7 @@ To install symfony-bootstrap, do the following:
 git clone git://github.com/phiamo/symfony-bootstrap.git
 cd symfony-bootstrap
 cp app/config/parameters.yml.default app/config/parameters.yml
+curl -s https://getcomposer.org/installer | php
 composer.phar install
 app/console assetic:dump
 ```
