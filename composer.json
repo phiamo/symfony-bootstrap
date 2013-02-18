@@ -22,6 +22,9 @@
         "mopa/bootstrap-bundle": "dev-master",
         "twitter/bootstrap": "master"
     },
+    "require-dev": {
+        "mopa/bootstrap-sandbox-bundle": "dev-master"
+    },
     "scripts": {
         "post-install-cmd": [
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
@@ -49,7 +52,6 @@
             "dev-master": "2.3-dev"
         }
     },
-    "minimum-stability": "dev",
     "repositories": [
         {
             "type": "package",

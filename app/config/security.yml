@@ -38,11 +38,5 @@ security:
             #anonymous: ~
             #http_basic:
             #    realm: "Secured Demo Area"
-        wsse_secured:
-            pattern:   ^/mopa/update/api/.*
-            wsse:
-                nonce_dir: null
-                lifetime: 300
-                provider: in_memory # the user provider providing you user with the role ROLE_REMOTE_UPDATER
     access_control:
         #- { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY, requires_channel: https }

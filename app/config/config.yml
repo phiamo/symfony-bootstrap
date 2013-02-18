@@ -4,8 +4,6 @@ imports:
     - { resource: @MopaBootstrapSandboxBundle/Resources/config/themes.yml }
     - { resource: @MopaBootstrapSandboxBundle/Resources/config/examples/example_menu.yml }
     - { resource: @MopaBootstrapSandboxBundle/Resources/config/examples/example_navbar.yml }
-    - { resource: @MopaRemoteUpdateBundle/Resources/config/config.yml }
-    - { resource: @MopaRemoteUpdateBundle/Resources/config/database.yml }
 
 framework:
     #esi:             ~
@@ -86,14 +84,3 @@ mopa_bootstrap:
     initializr:
         google:
             analytics: UA-17161773-2
-
-mopa_remote_update:
-    remotes:
-        vserverli2:
-            preUpdate: git pull
-            postUpdate: bin/post-composer.sh -w
-            url: %mopa_remote_update_url%
-            username: %mopa_remote_update_user%
-            password: %mopa_remote_update_password%
-            updater: cron
-    composer: /usr/sbin/composer.phar
