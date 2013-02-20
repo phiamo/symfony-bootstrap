@@ -1,5 +1,5 @@
 {
-    "name": "mopa/symfony-bootstrap",
+    "name": "mopa/symfony-framework-bootstrap-edition",
     "description": "he \"Symfony Standard Edition\" distribution enriched with twitter/bootstrap2",
     "license": "inherit",
     "autoload": {
