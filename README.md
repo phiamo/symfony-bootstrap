@@ -7,6 +7,9 @@ It is intended to kickstart your development, serving as an alternative to [symf
 There is a live preview available here: 
     http://bootstrap.mohrenweiserpartner.de/mopa/bootstrap
 
+Packagist link:
+    https://packagist.org/packages/mopa/symfony-framework-bootstrap-edition
+
 What it is made of
 ------------------
 
