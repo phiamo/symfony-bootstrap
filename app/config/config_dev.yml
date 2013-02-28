@@ -1,5 +1,8 @@
 imports:
     - { resource: config.yml }
+    - { resource: @MopaBootstrapSandboxBundle/Resources/config/themes.yml }
+    - { resource: @MopaBootstrapSandboxBundle/Resources/config/examples/example_menu.yml }
+    - { resource: @MopaBootstrapSandboxBundle/Resources/config/examples/example_navbar.yml }
 
 framework:
     router:   { resource: "%kernel.root_dir%/config/routing_dev.yml" }
