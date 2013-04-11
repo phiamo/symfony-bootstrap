@@ -1,9 +1,6 @@
 imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
-    - { resource: @MopaBootstrapSandboxBundle/Resources/config/themes.yml }
-    - { resource: @MopaBootstrapSandboxBundle/Resources/config/examples/example_menu.yml }
-    - { resource: @MopaBootstrapSandboxBundle/Resources/config/examples/example_navbar.yml }
 
 framework:
     #esi:             ~

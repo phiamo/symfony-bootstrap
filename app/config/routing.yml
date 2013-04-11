@@ -6,10 +6,3 @@
 _welcome:
     pattern:   /
     defaults:  { _controller: MopaBootstrapSandboxBundle:Examples:index }
-
-MopaBootstrapSandbox:
-    resource: "@MopaBootstrapSandboxBundle/Resources/config/routing.yml"
-
-MopaUpdateBundle:
-    type:     rest
-    resource: "@MopaRemoteUpdateBundle/Resources/config/routing.yml"
