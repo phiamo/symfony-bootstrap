@@ -17,8 +17,45 @@ Symfony-Bootstrap depends on the following projects:
 - [MopaBootstrapBundle](http://github.com/phiamo/MopaBootstrapBundle) - Easy integration of twitters bootstrap into symfony2
 - [MopaBootstrapSandboxBundle](http://github.com/phiamo/MopaBootstrapSandboxBundle) - Seperate live docs from code
 
-Installation
-------------------
+
+
+Installation in a Vagrant box (recommended)
+-------------------------------------------
+
+This feature comes from https://github.com/seiffert/symfony-vagrant
+Thanks seiffert, i just included the vagrant folder from there and added a few puppet modules
+
+- Install vagrant on your system
+  see [vagrantup.com](http://vagrantup.com/v1/docs/getting-started/index.html)
+  
+- Get a base box with puppet support
+  see [http://www.vagrantbox.es/ list](http://www.vagrantbox.es/)
+  e.g. http://puppet-vagrant-boxes.puppetlabs.com/ubuntu-server-1204-x64.box
+  add it to your system: vagrant box add ubuntu-server-1204 http://puppet-vagrant-boxes.puppetlabs.com/ubuntu-server-1204-x64.box
+
+- Install composer on your system
+  see [getcomposer.org](http://getcomposer.org/doc/00-intro.md)
+
+```
+# clone the symfony-bootstrap edition:
+git clone https://github.com/phiamo/symfony-bootstrap.git
+# enter directory
+cd symfony-bootstrap
+# copy default parameters to local parameters
+cp app/config/parameters.yml.default app/config/parameters.yml
+# tell composer to install including dev (BootstrapSandboxBundle)
+composer.phar install --dev
+# enter vagrant dir
+cd vagrant
+# take the vm up
+vagrant up
+# wait until everything is setup, might take some mins on my quite fast system with ssd takes around 5 mins (downloading java, nodejs, etc)
+# go to your browser
+# http://192.168.10.42
+```
+
+Installation on a Host System
+-----------------------------
 
 Before installing symfony-bootstrap, the following needs to be installed beforehand:
 
@@ -36,6 +73,7 @@ curl -s https://getcomposer.org/installer | php
 composer.phar install
 app/console assetic:dump
 ```
+
 
 It should now work. If you run into any issues, feel free to open a new issue or make a new pull request.
 
