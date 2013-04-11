@@ -7,6 +7,9 @@ It is intended to kickstart your development, serving as an alternative to [symf
 There is a live preview available here: 
     http://bootstrap.mohrenweiserpartner.de/mopa/bootstrap
 
+Packagist link:
+    https://packagist.org/packages/mopa/symfony-framework-bootstrap-edition
+
 What it is made of
 ------------------
 
@@ -51,7 +54,7 @@ cd vagrant
 vagrant up
 # wait until everything is setup, might take some mins on my quite fast system with ssd takes around 5 mins (downloading java, nodejs, etc)
 # go to your browser
-# http://192.168.10.42
+# http://192.168.10.42/app_dev.php
 ```
 
 Installation on a Host System
@@ -70,7 +73,7 @@ git clone git://github.com/phiamo/symfony-bootstrap.git
 cd symfony-bootstrap
 cp app/config/parameters.yml.default app/config/parameters.yml
 curl -s https://getcomposer.org/installer | php
-composer.phar install
+composer.phar install --dev
 app/console assetic:dump
 ```
 
