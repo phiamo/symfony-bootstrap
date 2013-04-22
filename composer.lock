@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "97328a5d7f7e8b709686188592c30326",
+    "hash": "4151538076faa139e0f9220446854902",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -285,31 +285,38 @@
         },
         {
             "name": "doctrine/dbal",
-            "version": "2.3.x-dev",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "4abe8f7602e0f4079848950190fb6798781c94c7"
+                "reference": "af20e34873156375f928fcd4395c26270c627af8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/4abe8f7602e0f4079848950190fb6798781c94c7",
-                "reference": "4abe8f7602e0f4079848950190fb6798781c94c7",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/af20e34873156375f928fcd4395c26270c627af8",
+                "reference": "af20e34873156375f928fcd4395c26270c627af8",
                 "shasum": ""
             },
             "require": {
-                "doctrine/common": ">=2.3.0,<2.5-dev",
+                "doctrine/common": "2.4.x-dev",
                 "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*",
+                "symfony/console": "2.*"
+            },
+            "suggest": {
+                "symfony/console": "Allows use of the command line interface"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3.x-dev"
+                    "dev-master": "2.4.x-dev"
                 }
             },
             "autoload": {
                 "psr-0": {
-                    "Doctrine\\DBAL": "lib/"
+                    "Doctrine\\DBAL\\": "lib/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -344,7 +351,7 @@
                 "persistence",
                 "queryobject"
             ],
-            "time": "2013-04-20 08:33:51"
+            "time": "2013-04-20 08:33:25"
         },
         {
             "name": "doctrine/doctrine-bundle",
@@ -543,20 +550,21 @@
         },
         {
             "name": "doctrine/orm",
-            "version": "2.3.x-dev",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/doctrine2.git",
-                "reference": "803f2740c9073fdf94e327c555d496078f82d8ce"
+                "reference": "3aae50cb59e4b0e25a7a7e1523c458e5e0b3ab12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/803f2740c9073fdf94e327c555d496078f82d8ce",
-                "reference": "803f2740c9073fdf94e327c555d496078f82d8ce",
+                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/3aae50cb59e4b0e25a7a7e1523c458e5e0b3ab12",
+                "reference": "3aae50cb59e4b0e25a7a7e1523c458e5e0b3ab12",
                 "shasum": ""
             },
             "require": {
-                "doctrine/dbal": "2.3.*",
+                "doctrine/collections": ">=1.1,<2.0",
+                "doctrine/dbal": ">=2.4-beta,<2.5-dev",
                 "ext-pdo": "*",
                 "php": ">=5.3.2",
                 "symfony/console": "2.*"
@@ -571,12 +579,12 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3.x-dev"
+                    "dev-master": "2.4.x-dev"
                 }
             },
             "autoload": {
                 "psr-0": {
-                    "Doctrine\\ORM": "lib/"
+                    "Doctrine\\ORM\\": "lib/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -609,7 +617,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2013-04-14 07:52:39"
+            "time": "2013-04-21 19:07:31"
         },
         {
             "name": "jdorn/sql-formatter",
@@ -1116,17 +1124,17 @@
         },
         {
             "name": "mopa/bootstrap-bundle",
-            "version": "dev-master",
+            "version": "v2.2.0-alpha1",
             "target-dir": "Mopa/Bundle/BootstrapBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phiamo/MopaBootstrapBundle.git",
-                "reference": "63b9e27671bddb59e55131c55587331920141430"
+                "reference": "v2.2.0-alpha1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phiamo/MopaBootstrapBundle/zipball/63b9e27671bddb59e55131c55587331920141430",
-                "reference": "63b9e27671bddb59e55131c55587331920141430",
+                "url": "https://api.github.com/repos/phiamo/MopaBootstrapBundle/zipball/v2.2.0-alpha1",
+                "reference": "v2.2.0-alpha1",
                 "shasum": ""
             },
             "require": {
@@ -1174,7 +1182,7 @@
                 "form",
                 "template"
             ],
-            "time": "2013-04-13 12:58:51"
+            "time": "2013-04-21 11:26:50"
         },
         {
             "name": "mopa/composer-bridge",
@@ -1686,12 +1694,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "c8e3f0fabe14a7e337984ba629f50eb1ebd65ceb"
+                "reference": "a8af3e2c1866d6978e6de9ad496f697744284474"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/c8e3f0fabe14a7e337984ba629f50eb1ebd65ceb",
-                "reference": "c8e3f0fabe14a7e337984ba629f50eb1ebd65ceb",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/a8af3e2c1866d6978e6de9ad496f697744284474",
+                "reference": "a8af3e2c1866d6978e6de9ad496f697744284474",
                 "shasum": ""
             },
             "require": {
@@ -1777,7 +1785,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2013-04-21 17:39:25"
+            "time": "2013-04-22 04:29:54"
         },
         {
             "name": "twig/extensions",
@@ -1877,14 +1885,30 @@
         },
         {
             "name": "twitter/bootstrap",
-            "version": "master",
+            "version": "v2.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twitter/bootstrap.git",
-                "reference": "v2.0.4"
+                "reference": "v2.3.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twitter/bootstrap/zipball/v2.3.1",
+                "reference": "v2.3.1",
+                "shasum": ""
             },
             "type": "library",
-            "time": "2012-06-01 18:04:27"
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "Sleek, intuitive, and powerful front-end framework for faster and easier web development.",
+            "homepage": "http://twitter.github.com/bootstrap/",
+            "keywords": [
+                "bootstrap",
+                "css"
+            ],
+            "time": "2013-03-01 05:24:27"
         }
     ],
     "packages-dev": [
@@ -2057,23 +2081,23 @@
         },
         {
             "name": "mopa/bootstrap-sandbox-bundle",
-            "version": "dev-master",
+            "version": "v2.2.0-alpha1",
             "target-dir": "Mopa/Bundle/BootstrapSandboxBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phiamo/MopaBootstrapSandboxBundle.git",
-                "reference": "6869c649492971a02a48f41ed809494eb3211022"
+                "reference": "v2.2.0-alpha1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phiamo/MopaBootstrapSandboxBundle/zipball/6869c649492971a02a48f41ed809494eb3211022",
-                "reference": "6869c649492971a02a48f41ed809494eb3211022",
+                "url": "https://api.github.com/repos/phiamo/MopaBootstrapSandboxBundle/zipball/v2.2.0-alpha1",
+                "reference": "v2.2.0-alpha1",
                 "shasum": ""
             },
             "require": {
                 "knplabs/knp-menu-bundle": "2.0.x-dev",
                 "liip/theme-bundle": "dev-master",
-                "mopa/bootstrap-bundle": "2.1.*",
+                "mopa/bootstrap-bundle": "2.2.*",
                 "php": ">=5.3.2"
             },
             "type": "symfony-bundle",
@@ -2106,7 +2130,7 @@
                 "sandbox",
                 "template"
             ],
-            "time": "2013-04-11 13:15:33"
+            "time": "2013-04-22 05:38:33"
         }
     ],
     "aliases": [
@@ -2114,8 +2138,8 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "mopa/bootstrap-bundle": 20,
-        "mopa/bootstrap-sandbox-bundle": 20
+        "mopa/bootstrap-bundle": 15,
+        "mopa/bootstrap-sandbox-bundle": 15
     },
     "platform": {
         "php": ">=5.3.3"
