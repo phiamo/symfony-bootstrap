@@ -1,3 +1,6 @@
+class { 'apt':
+  always_apt_update    => true
+}
 Exec { path => ['/usr/local/bin', '/opt/local/bin', '/usr/bin', '/usr/sbin', '/bin', '/sbin'], logoutput => true }
 Package { require => Exec['apt_update'], }
 

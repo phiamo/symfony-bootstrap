@@ -27,6 +27,7 @@ Installation in a Vagrant box (recommended)
 
 This feature comes from https://github.com/seiffert/symfony-vagrant
 Thanks seiffert, i just included the vagrant folder from there and added a few puppet modules
+This installs a complete linux setup including nodejs less java css
 
 - Install vagrant on your system
   see [vagrantup.com](http://vagrantup.com/v1/docs/getting-started/index.html)
@@ -44,12 +45,17 @@ Thanks seiffert, i just included the vagrant folder from there and added a few p
 git clone https://github.com/phiamo/symfony-bootstrap.git
 # enter directory
 cd symfony-bootstrap
+# init submodules
+git subodule init
 # copy default parameters to local parameters
 cp app/config/parameters.yml.default app/config/parameters.yml
 # tell composer to install including dev (BootstrapSandboxBundle)
 composer.phar install --dev
 # enter vagrant dir
 cd vagrant
+# copy Personalization.dist to Personalization
+cp Personalization.dist Personalization
+# modify to your needs
 # take the vm up
 vagrant up
 # wait until everything is setup, might take some mins on my quite fast system with ssd takes around 5 mins (downloading java, nodejs, etc)
