@@ -14,6 +14,8 @@ Vagrant::Config.run do |config|
   config.vm.share_folder $vhost, "/srv/www/vhosts/" + $vhost + ".dev", "../", :nfs => $use_nfs
 
   config.vm.customize ["modifyvm", :id, "--memory", "512"]
+  
+  config.vm.provision :shell, :inline => "sudo apt-get update && sudo apt-get install puppet -y"
 
   config.vm.provision :puppet do |puppet|
       puppet.manifests_path = "puppet"
@@ -23,5 +25,8 @@ Vagrant::Config.run do |config|
                                 "vhost" => $vhost,
                                 "webserver" => $webserver
                               }
+
+      puppet.options        = "--http_proxy_host http://proxy.ma.tech.ascom.ch"
+      puppet.options        = "--http_proxy_port 8080"
   end
 end
