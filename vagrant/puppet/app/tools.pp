@@ -6,12 +6,13 @@ class app::tools {
               "patch",
               "git",
               "vim",
-              "build-essential"]:
+              "build-essential",
+              "augeas-tools"]:
         ensure => present,
     }
 
-    exec {"find-utils-updatedb":
-        command => "/usr/bin/updatedb &",
-        require => Package["mlocate"],
-    }
+    #exec {"find-utils-updatedb":
+    #    command => "/usr/bin/updatedb &",
+    #    require => Package["mlocate"],
+    #}
 }
