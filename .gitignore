@@ -31,6 +31,9 @@ bin/envvars
 # to have the possibility to have an own htaccess e.g. with protection (as on prod)
 web/.htaccess
 
+# ignore compiled files (see config.yml assetic: read_from)
+web/compiled/
+
 # ignore parameters so everone can have its own
 app/config/parameters.yml
 
