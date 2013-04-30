@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "3ed7fa41262587bd0fd600dd0ad5bae6",
+    "hash": "911501d759030202e0d34ba35ce4bc02",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1052,29 +1052,29 @@
         },
         {
             "name": "mopa/bootstrap-bundle",
-            "version": "dev-master",
+            "version": "2.1.x-dev",
             "target-dir": "Mopa/Bundle/BootstrapBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phiamo/MopaBootstrapBundle.git",
-                "reference": "15fb22f16270f6311a5a6397f3a54c1b36e9fa96"
+                "reference": "eb0d81b91a988e2dc3ca529efd85d8b3c11cc2a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phiamo/MopaBootstrapBundle/zipball/15fb22f16270f6311a5a6397f3a54c1b36e9fa96",
-                "reference": "15fb22f16270f6311a5a6397f3a54c1b36e9fa96",
+                "url": "https://api.github.com/repos/phiamo/MopaBootstrapBundle/zipball/eb0d81b91a988e2dc3ca529efd85d8b3c11cc2a5",
+                "reference": "eb0d81b91a988e2dc3ca529efd85d8b3c11cc2a5",
                 "shasum": ""
             },
             "require": {
                 "mopa/composer-bridge": "1.*",
-                "symfony/symfony": ">=2.1,<2.4-dev"
+                "symfony/symfony": ">=2.1,<2.2-dev"
             },
             "suggest": {
                 "craue/formflow-bundle": "dev-master",
                 "jlong/sass-twitter-bootstrap": "dev-master",
-                "knplabs/knp-menu-bundle": "1.1.*",
+                "knplabs/knp-menu-bundle": "2.0.*",
                 "knplabs/knp-paginator-bundle": "dev-master",
-                "twitter/bootstrap": "2.0.*"
+                "twitter/bootstrap": "2.*"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -1110,7 +1110,7 @@
                 "form",
                 "template"
             ],
-            "time": "2013-04-29 23:23:10"
+            "time": "2013-04-30 09:05:27"
         },
         {
             "name": "mopa/composer-bridge",
@@ -1976,6 +1976,7 @@
     "stability-flags": {
         "twig/extensions": 20,
         "kriswallsmith/assetic": 20,
+        "mopa/bootstrap-bundle": 20,
         "mopa/bootstrap-sandbox-bundle": 20
     },
     "platform": {
