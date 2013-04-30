@@ -475,19 +475,11 @@ class SymfonyRequirements extends RequirementCollection
         );
 
         if (function_exists('apc_store') && ini_get('apc.enabled')) {
-            if (version_compare($installedPhpVersion, '5.4.0', '>=')) {
-                $this->addRequirement(
-                    version_compare(phpversion('apc'), '3.1.13', '>='),
-                    'APC version must be at least 3.1.13 when using PHP 5.4',
-                    'Upgrade your <strong>APC</strong> extension (3.1.13+).'
-                );
-            } else {
-                $this->addRequirement(
-                    version_compare(phpversion('apc'), '3.0.17', '>='),
-                    'APC version must be at least 3.0.17',
-                    'Upgrade your <strong>APC</strong> extension (3.0.17+).'
-                );
-            }
+            $this->addRequirement(
+                version_compare(phpversion('apc'), '3.0.17', '>='),
+                'APC version must be at least 3.0.17',
+                'Upgrade your <strong>APC</strong> extension (3.0.17+).'
+            );
         }
 
         $this->addPhpIniRequirement('detect_unicode', false);

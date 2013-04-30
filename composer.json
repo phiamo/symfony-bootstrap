@@ -8,86 +8,25 @@
     },
     "require": {
         "php": ">=5.3.3",
-        "symfony/symfony": "2.3.*",
-        "doctrine/orm": ">=2.2.3,<2.4-dev",
-        "doctrine/doctrine-bundle": "1.2.*",
-        "twig/extensions": "1.0.*",
+        "symfony/symfony": "2.1.*",
+        "doctrine/orm": ">=2.2.3,<2.5-dev",
+        "doctrine/doctrine-bundle": "1.1.*",
+        "twig/extensions": "1.0.*@dev",
         "symfony/assetic-bundle": "2.1.*",
-        "symfony/swiftmailer-bundle": "2.2.*",
-        "symfony/monolog-bundle": "2.2.*",
-        "sensio/distribution-bundle": "2.2.*",
-        "sensio/framework-extra-bundle": "2.2.*",
-        "sensio/generator-bundle": "2.2.*",
-        "jms/security-extra-bundle": "1.4.*",
-        "jms/di-extra-bundle": "1.3.*",
-        "knplabs/knp-menu-bundle": "dev-Versionfix as 2.0.x-dev",
-        "liip/theme-bundle": "dev-Versionfix as master",
-        "mopa/bootstrap-bundle": "master",
+        "symfony/swiftmailer-bundle": "2.1.*",
+        "symfony/monolog-bundle": "2.1.*",
+        "sensio/distribution-bundle": "2.1.*",
+        "sensio/framework-extra-bundle": "2.1.*",
+        "sensio/generator-bundle": "2.1.*",
+        "jms/security-extra-bundle": "1.2.*",
+        "jms/di-extra-bundle": "1.1.*",
+        "kriswallsmith/assetic": "1.1.*@dev",
+        "mopa/bootstrap-bundle": ">=2.1,<2.2",
         "twitter/bootstrap": "2.3.1"
     },
     "require-dev": {
-        "mopa/bootstrap-sandbox-bundle": "master"
+        "mopa/bootstrap-sandbox-bundle": "2.1.x-dev"
     },
-    "repositories": [
-        {
-            "package":             {
-                "name": "liip/theme-bundle",
-                "source":                 {
-                    "reference": "master",
-                    "type": "git",
-                    "url": "https://github.com/liip/LiipThemeBundle"
-                },
-                "require":                     {
-                    "php": ">=5.3.2"
-                },
-                "require-dev":                     {
-                    
-                },
-                "target-dir": "Liip/ThemeBundle",
-                "autoload":                     {
-                    "psr-0":                         {
-                        "Liip\\ThemeBundle": ""
-                    }
-                },
-                "version": "dev-Versionfix"
-            },
-            "type": "package"
-        },
-        {
-            "package":             {
-                "autoload":                 {
-                    "psr-0":                     {
-                        "Knp\\Bundle\\MenuBundle": ""
-                    }
-                },
-                "name": "knplabs/knp-menu-bundle",
-                "require":                 {
-                    "knplabs/knp-menu": "2.0.*",
-                    "symfony/framework-bundle": ">=2.0,<=2.3.x-dev"
-                },
-                "source":                 {
-                    "reference": "master",
-                    "type": "git",
-                    "url": "https://github.com/KnpLabs/KnpMenuBundle.git"
-                },
-                "target-dir": "Knp/Bundle/MenuBundle",
-                "version": "dev-Versionfix"
-            },
-            "type": "package"
-        },
-        {
-            "package":             {
-                "name": "twitter/bootstrap",
-                "source":                 {
-                    "reference": "v2.0.4",
-                    "type": "git",
-                    "url": "https://github.com/twitter/bootstrap.git"
-                },
-                "version": "master"
-            },
-            "type": "package"
-        }
-    ],
     "scripts": {
         "post-install-cmd": [
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
@@ -110,7 +49,7 @@
     "minimum-stability": "dev",
     "extra": {
         "branch-alias":         {
-            "dev-master": "2.3-dev"
+            "dev-master": "2.1-dev"
         },
         "symfony-app-dir": "app",
         "symfony-web-dir": "web"
