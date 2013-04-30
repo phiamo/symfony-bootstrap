@@ -16,7 +16,6 @@ security:
                 users:
                     user:  { password: userpass, roles: [ 'ROLE_USER' ] }
                     admin: { password: adminpass, roles: [ 'ROLE_ADMIN' ] }
-                    %mopa_remote_update_user%:  { password: %mopa_remote_update_password%, roles: 'ROLE_REMOTE_UPDATER' }
 
     firewalls:
         dev:

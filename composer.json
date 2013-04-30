@@ -31,30 +31,6 @@
     "repositories": [
         {
             "package":             {
-                "name": "liip/theme-bundle",
-                "source":                 {
-                    "reference": "master",
-                    "type": "git",
-                    "url": "https://github.com/liip/LiipThemeBundle"
-                },
-                "require":                     {
-                    "php": ">=5.3.2"
-                },
-                "require-dev":                     {
-                    
-                },
-                "target-dir": "Liip/ThemeBundle",
-                "autoload":                     {
-                    "psr-0":                         {
-                        "Liip\\ThemeBundle": ""
-                    }
-                },
-                "version": "dev-Versionfix"
-            },
-            "type": "package"
-        },
-        {
-            "package":             {
                 "autoload":                 {
                     "psr-0":                     {
                         "Knp\\Bundle\\MenuBundle": ""
@@ -72,18 +48,6 @@
                 },
                 "target-dir": "Knp/Bundle/MenuBundle",
                 "version": "dev-Versionfix"
-            },
-            "type": "package"
-        },
-        {
-            "package":             {
-                "name": "twitter/bootstrap",
-                "source":                 {
-                    "reference": "v2.0.4",
-                    "type": "git",
-                    "url": "https://github.com/twitter/bootstrap.git"
-                },
-                "version": "master"
             },
             "type": "package"
         }
