@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "7c76ea8ea98e001ac00d2258c33ccccf",
+    "hash": "2223cd290978a9010b4fa98bff5ca9cd",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -130,7 +130,7 @@
                 {
                     "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -196,7 +196,7 @@
                 {
                     "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -1155,7 +1155,7 @@
                     "Liip\\ThemeBundle": ""
                 }
             },
-            "time": "2013-03-31 18:50:03"
+            "time": "2013-04-29 18:28:30"
         },
         {
             "name": "monolog/monolog",
@@ -1226,12 +1226,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phiamo/MopaBootstrapBundle.git",
-                "reference": "15fb22f16270f6311a5a6397f3a54c1b36e9fa96"
+                "reference": "1a91bd5ffb216a9b7fbd7936599671871790d944"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phiamo/MopaBootstrapBundle/zipball/15fb22f16270f6311a5a6397f3a54c1b36e9fa96",
-                "reference": "15fb22f16270f6311a5a6397f3a54c1b36e9fa96",
+                "url": "https://api.github.com/repos/phiamo/MopaBootstrapBundle/zipball/1a91bd5ffb216a9b7fbd7936599671871790d944",
+                "reference": "1a91bd5ffb216a9b7fbd7936599671871790d944",
                 "shasum": ""
             },
             "require": {
@@ -1241,14 +1241,15 @@
             "suggest": {
                 "craue/formflow-bundle": "dev-master",
                 "jlong/sass-twitter-bootstrap": "dev-master",
-                "knplabs/knp-menu-bundle": "1.1.*",
+                "knplabs/knp-menu-bundle": "2.0.*",
                 "knplabs/knp-paginator-bundle": "dev-master",
-                "twitter/bootstrap": "2.0.*"
+                "mopa/bootstrap-sandbox-bundle": "~2.3",
+                "twitter/bootstrap": "2.*"
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1.x-dev"
+                    "dev-master": "2.3.x-dev"
                 }
             },
             "autoload": {
@@ -1279,7 +1280,7 @@
                 "form",
                 "template"
             ],
-            "time": "2013-04-29 23:23:10"
+            "time": "2013-04-30 09:57:19"
         },
         {
             "name": "mopa/composer-bridge",
