@@ -19,74 +19,14 @@
         "sensio/framework-extra-bundle": "2.3.*",
         "sensio/generator-bundle": "2.3.*",
         "incenteev/composer-parameter-handler": "~2.0",
-        "mopa/bootstrap-bundle": "master",
-        "twitter/bootstrap": "2.3.1"
+        "mopa/bootstrap-bundle": "dev-master",
+        "twbs/bootstrap": "dev-master"
     },
     "require-dev": {
-        "knplabs/knp-menu-bundle": "dev-Versionfix as 2.0.x-dev",
-        "liip/theme-bundle": "dev-Versionfix as master",
-        "mopa/bootstrap-sandbox-bundle": "master"
+        "knplabs/knp-menu-bundle": "dev-master",
+        "liip/theme-bundle": "dev-master",
+        "mopa/bootstrap-sandbox-bundle": "dev-master"
     },
-    "repositories": [
-        {
-            "package":             {
-                "name": "liip/theme-bundle",
-                "source":                 {
-                    "reference": "master",
-                    "type": "git",
-                    "url": "https://github.com/liip/LiipThemeBundle"
-                },
-                "require":                     {
-                    "php": ">=5.3.2"
-                },
-                "require-dev":                     {
-                    
-                },
-                "target-dir": "Liip/ThemeBundle",
-                "autoload":                     {
-                    "psr-0":                         {
-                        "Liip\\ThemeBundle": ""
-                    }
-                },
-                "version": "dev-Versionfix"
-            },
-            "type": "package"
-        },
-        {
-            "package":             {
-                "autoload":                 {
-                    "psr-0":                     {
-                        "Knp\\Bundle\\MenuBundle": ""
-                    }
-                },
-                "name": "knplabs/knp-menu-bundle",
-                "require":                 {
-                    "knplabs/knp-menu": "2.0.*",
-                    "symfony/framework-bundle": ">=2.0,<=2.3.x-dev"
-                },
-                "source":                 {
-                    "reference": "master",
-                    "type": "git",
-                    "url": "https://github.com/KnpLabs/KnpMenuBundle.git"
-                },
-                "target-dir": "Knp/Bundle/MenuBundle",
-                "version": "dev-Versionfix"
-            },
-            "type": "package"
-        },
-        {
-            "package":             {
-                "name": "twitter/bootstrap",
-                "source":                 {
-                    "reference": "v2.0.4",
-                    "type": "git",
-                    "url": "https://github.com/twitter/bootstrap.git"
-                },
-                "version": "master"
-            },
-            "type": "package"
-        }
-    ],
     "scripts": {
         "post-install-cmd": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",

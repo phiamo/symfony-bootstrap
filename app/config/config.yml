@@ -32,11 +32,10 @@ twig:
 assetic:
     debug:          %kernel.debug%
     use_controller: false
-    read_from: %kernel.root_dir%/../web/compiled
     filters:
         less:
-            node: /usr/bin/node
-            node_paths: [/usr/local/lib/node_modules, /usr/lib/node_modules,]
+            node: /usr/local/bin/node
+            node_paths: [/usr/local/lib/node_modules,]
             apply_to: "\.less$"
         cssrewrite: ~
         cssembed:

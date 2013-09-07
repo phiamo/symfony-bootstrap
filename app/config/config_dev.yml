@@ -29,7 +29,7 @@ monolog:
 
 assetic:
     debug:          %kernel.debug%
-    use_controller: true
+    use_controller: false
 
 services:
     twig.extension.debug:
