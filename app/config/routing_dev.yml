@@ -17,5 +17,3 @@ _configurator:
 _main:
     resource: routing.yml
 
-MopaBootstrapSandbox:
-    resource: "@MopaBootstrapSandboxBundle/Resources/config/routing.yml"

@@ -24,9 +24,6 @@ framework:
 twig:
     debug:            %kernel.debug%
     strict_variables: %kernel.debug%
-    form:
-        resources:
-            - 'MopaBootstrapBundle:Form:fields.html.twig'
 
 # Assetic Configuration
 assetic:
@@ -80,3 +77,18 @@ mopa_bootstrap:
                 icon: trash
             widget_add_btn:
                 icon: plus-sign
+    initializr:
+        meta:
+            title:        "MopaBootstrapBundle"
+            description:  "This is the Sandbox Site"
+            keywords:     "bootstrap getootstrap opabootstrap mopabootstrapbundle bootstrap bundle symfony2"
+            author_name:  "phiamo"
+            author_url:   "phiamo@googlemail.com"
+            nofollow:     false
+            noindex:      false
+        dns_prefetch:
+            - '//ajax.googleapis.com'
+        google:
+            wt: 'xxx'
+            analytics: 'UA-xxxxxxx-xx'
+        diagnostic_mode: false

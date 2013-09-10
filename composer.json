@@ -19,13 +19,13 @@
         "sensio/framework-extra-bundle": "2.3.*",
         "sensio/generator-bundle": "2.3.*",
         "incenteev/composer-parameter-handler": "~2.0",
-        "mopa/bootstrap-bundle": "dev-master",
-        "twbs/bootstrap": "dev-master"
+        "mopa/bootstrap-bundle": "dev-v2.3.x",
+        "twbs/bootstrap": "v2.3.2"
     },
     "require-dev": {
         "knplabs/knp-menu-bundle": "dev-master",
         "liip/theme-bundle": "dev-master",
-        "mopa/bootstrap-sandbox-bundle": "dev-master"
+        "mopa/bootstrap-sandbox-bundle": "2.x-dev"
     },
     "scripts": {
         "post-install-cmd": [

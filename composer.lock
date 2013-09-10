@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "779a9c4a7c2c549aad37ca9f1bd76c5a",
+    "hash": "af1ceaf24e1763b861fbb12359e0ec3f",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -292,12 +292,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "6a62fefefde6b2c0d8b3df70151d6a81fc028d28"
+                "reference": "2addbddbc7134bd775bbb1f30d172d1271a6afb0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/6a62fefefde6b2c0d8b3df70151d6a81fc028d28",
-                "reference": "6a62fefefde6b2c0d8b3df70151d6a81fc028d28",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/2addbddbc7134bd775bbb1f30d172d1271a6afb0",
+                "reference": "2addbddbc7134bd775bbb1f30d172d1271a6afb0",
                 "shasum": ""
             },
             "require": {
@@ -347,7 +347,7 @@
                 "persistence",
                 "queryobject"
             ],
-            "time": "2013-05-21 05:53:02"
+            "time": "2013-09-08 13:25:53"
         },
         {
             "name": "doctrine/doctrine-bundle",
@@ -550,12 +550,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/doctrine2.git",
-                "reference": "b1ba11c06ffbf795417cdacddaa21e22209d5789"
+                "reference": "66d8b43f69105f3e3f0fb7d042f805eec1107e22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/b1ba11c06ffbf795417cdacddaa21e22209d5789",
-                "reference": "b1ba11c06ffbf795417cdacddaa21e22209d5789",
+                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/66d8b43f69105f3e3f0fb7d042f805eec1107e22",
+                "reference": "66d8b43f69105f3e3f0fb7d042f805eec1107e22",
                 "shasum": ""
             },
             "require": {
@@ -612,7 +612,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2013-08-20 08:02:51"
+            "time": "2013-09-08 14:03:26"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -856,16 +856,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phiamo/MopaBootstrapBundle.git",
-                "reference": "e8495b0390405f4599d0590d3f93f615e04cd020"
+                "reference": "e41a9526a236096aab6fe9e42807808017b3653d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phiamo/MopaBootstrapBundle/zipball/e8495b0390405f4599d0590d3f93f615e04cd020",
-                "reference": "e8495b0390405f4599d0590d3f93f615e04cd020",
+                "url": "https://api.github.com/repos/phiamo/MopaBootstrapBundle/zipball/e41a9526a236096aab6fe9e42807808017b3653d",
+                "reference": "e41a9526a236096aab6fe9e42807808017b3653d",
                 "shasum": ""
             },
             "require": {
-                "mopa/composer-bridge": "1.*",
+                "mopa/composer-bridge": "1.3.*",
                 "symfony/symfony": "~2.3-dev"
             },
             "suggest": {
@@ -879,7 +879,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3.x-dev"
+                    "dev-master": "3.x-dev"
                 }
             },
             "autoload": {
@@ -910,7 +910,7 @@
                 "form",
                 "template"
             ],
-            "time": "2013-09-07 10:59:31"
+            "time": "2013-09-10 14:37:49"
         },
         {
             "name": "mopa/composer-bridge",
@@ -918,12 +918,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phiamo/MopaComposerBridge.git",
-                "reference": "ebe4935554f6c65a55d98d9a632becfc5c3dfbe9"
+                "reference": "4ce791bfeabc5261da11cf4a949745d60dae711f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phiamo/MopaComposerBridge/zipball/ebe4935554f6c65a55d98d9a632becfc5c3dfbe9",
-                "reference": "ebe4935554f6c65a55d98d9a632becfc5c3dfbe9",
+                "url": "https://api.github.com/repos/phiamo/MopaComposerBridge/zipball/4ce791bfeabc5261da11cf4a949745d60dae711f",
+                "reference": "4ce791bfeabc5261da11cf4a949745d60dae711f",
                 "shasum": ""
             },
             "require": {
@@ -932,7 +932,7 @@
             "type": "symfony-bridge",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1.x-dev"
+                    "dev-master": "1.3.x-dev"
                 }
             },
             "autoload": {
@@ -961,7 +961,7 @@
                 "Symfony2",
                 "composer"
             ],
-            "time": "2013-08-20 05:48:42"
+            "time": "2013-09-10 10:06:34"
         },
         {
             "name": "psr/log",
@@ -1421,12 +1421,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "702e652002fd32b448686df2903fb73d610ff941"
+                "reference": "a672bba5cbe2e077534c4a676baaa8fceeaea70a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/702e652002fd32b448686df2903fb73d610ff941",
-                "reference": "702e652002fd32b448686df2903fb73d610ff941",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/a672bba5cbe2e077534c4a676baaa8fceeaea70a",
+                "reference": "a672bba5cbe2e077534c4a676baaa8fceeaea70a",
                 "shasum": ""
             },
             "require": {
@@ -1521,20 +1521,20 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2013-09-06 18:20:34"
+            "time": "2013-09-09 12:26:34"
         },
         {
             "name": "twbs/bootstrap",
-            "version": "dev-master",
+            "version": "v2.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "d126d8c6f3ffde8c108bfdf2f554facc9ccc516b"
+                "reference": "b4c4072679943773a7582daa63f545ba818fa627"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/d126d8c6f3ffde8c108bfdf2f554facc9ccc516b",
-                "reference": "d126d8c6f3ffde8c108bfdf2f554facc9ccc516b",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/b4c4072679943773a7582daa63f545ba818fa627",
+                "reference": "b4c4072679943773a7582daa63f545ba818fa627",
                 "shasum": ""
             },
             "type": "library",
@@ -1542,23 +1542,13 @@
             "license": [
                 "Apache-2.0"
             ],
-            "authors": [
-                {
-                    "name": "Mark Otto",
-                    "email": "markdotto@gmail.com"
-                },
-                {
-                    "name": "Jacob Thornton",
-                    "email": "jacobthornton@gmail.com"
-                }
-            ],
-            "description": "Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.",
-            "homepage": "http://getbootstrap.com",
+            "description": "Sleek, intuitive, and powerful front-end framework for faster and easier web development.",
+            "homepage": "http://twbs.github.com/bootstrap/",
             "keywords": [
                 "bootstrap",
                 "css"
             ],
-            "time": "2013-09-06 16:57:25"
+            "time": "2013-07-27 06:36:38"
         },
         {
             "name": "twig/extensions",
@@ -1613,12 +1603,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "16008174253c873ccf5b49f08874f949a467308d"
+                "reference": "4001f81a179e3971377ce1ac51b4ff9ea851b8ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/16008174253c873ccf5b49f08874f949a467308d",
-                "reference": "16008174253c873ccf5b49f08874f949a467308d",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/4001f81a179e3971377ce1ac51b4ff9ea851b8ce",
+                "reference": "4001f81a179e3971377ce1ac51b4ff9ea851b8ce",
                 "shasum": ""
             },
             "require": {
@@ -1654,7 +1644,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2013-09-06 10:25:58"
+            "time": "2013-09-08 15:21:02"
         }
     ],
     "packages-dev": [
@@ -1832,17 +1822,17 @@
         },
         {
             "name": "mopa/bootstrap-sandbox-bundle",
-            "version": "dev-master",
+            "version": "2.x-dev",
             "target-dir": "Mopa/Bundle/BootstrapSandboxBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phiamo/MopaBootstrapSandboxBundle.git",
-                "reference": "ea58b3a2efef85475d60bb4e0cf9f4bb7939f4de"
+                "reference": "368876c29f1015b9e72a1cf27e7fedefbdbf4380"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phiamo/MopaBootstrapSandboxBundle/zipball/ea58b3a2efef85475d60bb4e0cf9f4bb7939f4de",
-                "reference": "ea58b3a2efef85475d60bb4e0cf9f4bb7939f4de",
+                "url": "https://api.github.com/repos/phiamo/MopaBootstrapSandboxBundle/zipball/368876c29f1015b9e72a1cf27e7fedefbdbf4380",
+                "reference": "368876c29f1015b9e72a1cf27e7fedefbdbf4380",
                 "shasum": ""
             },
             "require": {
@@ -1881,7 +1871,7 @@
                 "sandbox",
                 "template"
             ],
-            "time": "2013-09-07 11:54:16"
+            "time": "2013-09-07 11:48:57"
         }
     ],
     "aliases": [
@@ -1890,7 +1880,6 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "mopa/bootstrap-bundle": 20,
-        "twbs/bootstrap": 20,
         "knplabs/knp-menu-bundle": 20,
         "liip/theme-bundle": 20,
         "mopa/bootstrap-sandbox-bundle": 20
