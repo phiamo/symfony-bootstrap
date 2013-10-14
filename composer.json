@@ -19,12 +19,10 @@
         "sensio/framework-extra-bundle": "2.3.*",
         "sensio/generator-bundle": "2.3.*",
         "mopa/bootstrap-bundle": "dev-master",
+        "mopa/bootstrap-sandbox-bundle": "dev-master",
         "twbs/bootstrap": "dev-master"
     },
     "require-dev": {
-        "knplabs/knp-menu-bundle": "dev-master",
-        "liip/theme-bundle": "dev-master",
-        "mopa/bootstrap-sandbox-bundle": "dev-master",
         "incenteev/composer-parameter-handler": "~2.0"
     },
     "scripts": {
@@ -48,7 +46,7 @@
     "config": {
         "bin-dir": "bin"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "extra": {
         "symfony-app-dir": "app",
         "symfony-web-dir": "web",
