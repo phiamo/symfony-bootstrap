@@ -50,16 +50,12 @@
     },
     "minimum-stability": "stable",
     "extra": {
-<<<<<<< HEAD
-        "branch-alias":         {
-=======
         "symfony-app-dir": "app",
         "symfony-web-dir": "web",
         "incenteev-parameters": {
             "file": "app/config/parameters.yml"
         },
         "branch-alias": {
->>>>>>> 2.3
             "dev-master": "2.3-dev"
         },
         "incenteev-parameters": {
