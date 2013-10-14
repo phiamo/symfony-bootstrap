@@ -18,14 +18,14 @@
         "sensio/distribution-bundle": "2.3.*",
         "sensio/framework-extra-bundle": "2.3.*",
         "sensio/generator-bundle": "2.3.*",
-        "incenteev/composer-parameter-handler": "~2.0",
         "mopa/bootstrap-bundle": "dev-master",
         "twbs/bootstrap": "dev-master"
     },
     "require-dev": {
         "knplabs/knp-menu-bundle": "dev-master",
         "liip/theme-bundle": "dev-master",
-        "mopa/bootstrap-sandbox-bundle": "dev-master"
+        "mopa/bootstrap-sandbox-bundle": "dev-master",
+        "incenteev/composer-parameter-handler": "~2.0"
     },
     "scripts": {
         "post-install-cmd": [
@@ -48,9 +48,18 @@
     "config": {
         "bin-dir": "bin"
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "extra": {
+<<<<<<< HEAD
         "branch-alias":         {
+=======
+        "symfony-app-dir": "app",
+        "symfony-web-dir": "web",
+        "incenteev-parameters": {
+            "file": "app/config/parameters.yml"
+        },
+        "branch-alias": {
+>>>>>>> 2.3
             "dev-master": "2.3-dev"
         },
         "incenteev-parameters": {

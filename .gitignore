@@ -1,13 +1,16 @@
-web/bundles/
-web/media/
-app/bootstrap.php.cache
-app/cache/*
-app/logs/*
-build/
-vendor/
-bin/
-composer.phar
-
+/web/bundles/
+/app/bootstrap.php.cache
+/app/cache/*
+/app/config/parameters.yml
+/app/logs/*
+!app/cache/.gitkeep
+!app/logs/.gitkeep
+/build/
+/vendor/
+/bin/
+/composer.phar
+web/css/*
+web/js/*
 
 ## generic files to ignore
 *~
