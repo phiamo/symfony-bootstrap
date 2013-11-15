@@ -46,9 +46,9 @@ git clone https://github.com/phiamo/symfony-bootstrap.git
 # enter directory
 cd symfony-bootstrap
 # init submodules
-git subodule init
+git submodule init
 # update submodules
-git subodule update
+git submodule update
 # copy default parameters to local parameters
 cp app/config/parameters.yml.default app/config/parameters.yml
 # tell composer to install including dev (BootstrapSandboxBundle)
