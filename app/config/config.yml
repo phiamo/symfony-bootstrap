@@ -74,7 +74,7 @@ swiftmailer:
     spool:     { type: memory }
 
 mopa_bootstrap:
-    navbar: ~
+    menu: ~
     form: 
         collection:
             widget_remove_btn:
