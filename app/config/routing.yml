@@ -3,6 +3,6 @@
 #    resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
 #    prefix:   /_internal
 
-mopa_boostrap_welcome:
+mopa_bootstrap_welcome:
     pattern:   /
     defaults:  { _controller: MopaBootstrapSandboxBundle:Examples:index }
