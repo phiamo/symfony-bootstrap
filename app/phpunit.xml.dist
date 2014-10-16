@@ -31,8 +31,8 @@
     <filter>
         <whitelist>
             <directory>../src</directory>
-            <directory>../vendor/mopa/bootstrap/Mopa/Bundle/BootstrapBundle/Tests</directory>
-            <directory>../vendor/mopa/bootstrap/Mopa/Bundle/BootstrapSandboxBundle/Tests</directory>
+            <directory>../vendor/mopa/bootstrap-bundle/Mopa/Bundle/BootstrapBundle/Tests</directory>
+            <directory>../vendor/mopa/bootstrap-sandbox-bundle/Mopa/Bundle/BootstrapSandboxBundle/Tests</directory>
             <exclude>
                 <directory>../src/*/*Bundle/Resources</directory>
                 <directory>../src/*/*Bundle/Tests</directory>
