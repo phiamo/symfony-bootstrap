@@ -1,7 +1,8 @@
-_welcome:
-    pattern:   /
-    defaults:  { _controller: MopaBootstrapSandboxBundle:Examples:index }
-
+    
+my_barcode_playground:
+    resource: "@MopaBarcodeBundle/Resources/config/routing/barcode_playground.yml"
+    prefix:   /
+    
 MopaBootstrapSandbox:
     resource: "@MopaBootstrapSandboxBundle/Resources/config/routing.yml"
 
