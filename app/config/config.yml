@@ -7,15 +7,18 @@ framework:
     secret:          %secret%
     router:
         resource: "%kernel.root_dir%/config/routing.yml"
-        strict_requirements: %kernel.debug%
-    form:            true
-    csrf_protection: true
+        strict_requirements: ~
+    form:            ~
+    csrf_protection: ~
     validation:      { enable_annotations: true }
-    templating:      { engines: ['twig'] } #assets_version: SomeVersionScheme
+    templating:
+        engines: ['twig']
+        #assets_version: SomeVersionScheme
     default_locale:  "%locale%"
     trusted_proxies: ~
     session:         ~
-    #router_proxy:   { path: /_proxy }
+    fragments:       ~
+    http_method_override: true
 
 # Twig Configuration
 twig:
@@ -32,7 +35,7 @@ assetic:
     filters:
         less:
             node: /usr/local/bin/node
-            node_paths: [/opt/lessc/lib, /usr/lib/node_modules, /usr/local/lib/node_modules]
+            node_paths: [/opt/lessc/lib, /usr/local/lib/node_modules, /usr/lib/node_modules,]
             apply_to: "\.less$"
         cssrewrite: ~
         cssembed:
@@ -54,7 +57,7 @@ swiftmailer:
     spool:     { type: memory }
 
 mopa_bootstrap:
-    navbar: ~
+    menu: ~
     form: 
         collection:
             widget_remove_btn:
@@ -62,5 +65,17 @@ mopa_bootstrap:
             widget_add_btn:
                 icon: plus-sign
     initializr:
+        meta:
+            title:        "MopaBootstrapBundle"
+            description:  "This is the Sandbox Site"
+            keywords:     "bootstrap getootstrap opabootstrap mopabootstrapbundle bootstrap bundle symfony2"
+            author_name:  "phiamo"
+            author_url:   "phiamo@googlemail.com"
+            nofollow:     false
+            noindex:      false
+        dns_prefetch:
+            - '//ajax.googleapis.com'
         google:
-            analytics: UA-17161773-2
+            wt: 'xxx'
+            analytics: 'UA-xxxxxxx-xx'
+        diagnostic_mode: false

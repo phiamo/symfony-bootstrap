@@ -1,0 +1,18 @@
+# Name of the vhost to create
+$vhost = "bootstrap"
+# this will also be the username and the database name set up by vagrant
+
+# VM IP
+$ip = "192.168.10.42"
+
+# Use NFS?
+$use_nfs = true
+
+# Base box name
+$base_box = "ubuntu-server-1204"
+
+# Which webserver do you want to use?
+# Valid choices are "nginx" and "apache2"
+#
+# Note: nginx implies the use of php-fpm
+$webserver = "nginx"

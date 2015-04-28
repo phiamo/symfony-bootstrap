@@ -24,10 +24,10 @@ class AppKernel extends Kernel
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
             $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
+
             $bundles[] = new Mopa\Bundle\BootstrapSandboxBundle\MopaBootstrapSandboxBundle();
             $bundles[] = new Liip\ThemeBundle\LiipThemeBundle();
             $bundles[] = new Knp\Bundle\MenuBundle\KnpMenuBundle();
-
         }
 
         return $bundles;

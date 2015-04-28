@@ -1,10 +1,7 @@
-    
+
 my_barcode_playground:
     resource: "@MopaBarcodeBundle/Resources/config/routing/barcode_playground.yml"
     prefix:   /
-    
-MopaBootstrapSandbox:
-    resource: "@MopaBootstrapSandboxBundle/Resources/config/routing.yml"
 
 _wdt:
     resource: "@WebProfilerBundle/Resources/config/routing/wdt.xml"
@@ -20,3 +17,6 @@ _configurator:
 
 _main:
     resource: routing.yml
+
+MopaBootstrapSandbox:
+    resource: "@MopaBootstrapSandboxBundle/Resources/config/routing.yml"

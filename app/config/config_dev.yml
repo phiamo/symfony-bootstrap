@@ -3,7 +3,9 @@ imports:
     - { resource: @MopaBootstrapSandboxBundle/Resources/config/themes.yml }
 
 framework:
-    router:   { resource: "%kernel.root_dir%/config/routing_dev.yml" }
+    router:
+        resource: "%kernel.root_dir%/config/routing_dev.yml"
+        strict_requirements: true
     profiler: { only_exceptions: false }
 
 web_profiler:
@@ -25,11 +27,11 @@ monolog:
 
 assetic:
     debug:          %kernel.debug%
-    use_controller: true
+    use_controller: false
 
 services:
     twig.extension.debug:
-        class: Twig_Extensions_Extension_Debug
+        class: Twig_Extension_Debug
         tags: [{ name: 'twig.extension' }]
 
 #swiftmailer:
