@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "25756983011293ca23f84d1494d74df7",
+    "hash": "e107d5f04006e0cd7883b74d8d276a3d",
     "packages": [
         {
             "name": "avalanche123/imagine-bundle",
@@ -705,12 +705,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phiamo/MopaBarcodeBundle.git",
-                "reference": "1b926e29279c3a85b0b86b1d88cebbac2bc1aad6"
+                "reference": "87d8ddc0e2c004e00e17542dbdc83af84f89b70b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phiamo/MopaBarcodeBundle/zipball/1b926e29279c3a85b0b86b1d88cebbac2bc1aad6",
-                "reference": "1b926e29279c3a85b0b86b1d88cebbac2bc1aad6",
+                "url": "https://api.github.com/repos/phiamo/MopaBarcodeBundle/zipball/87d8ddc0e2c004e00e17542dbdc83af84f89b70b",
+                "reference": "87d8ddc0e2c004e00e17542dbdc83af84f89b70b",
                 "shasum": ""
             },
             "require": {
@@ -718,8 +718,9 @@
             },
             "suggest": {
                 "avalanche123/imagine-bundle": "dev-master",
-                "mopa/bootstrap-sandbox-bundle": "dev-master",
-                "zendframework/zendframework": "dev-master"
+                "zendframework/zend-barcode": "~2.3.7",
+                "zendframework/zend-servicemanager": "~2.3.7",
+                "zendframework/zend-validator": "~2.3.7"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -745,7 +746,7 @@
                 "twig",
                 "zend"
             ],
-            "time": "2015-04-24 11:09:27"
+            "time": "2015-04-28 13:15:34"
         },
         {
             "name": "mopa/bootstrap-bundle",
@@ -1760,254 +1761,13 @@
             "time": "2014-03-04 21:00:07"
         }
     ],
-    "packages-dev": [
-        {
-            "name": "knplabs/knp-menu",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/KnpLabs/KnpMenu.git",
-                "reference": "0a7608e6d540d6558e817168329ea4e759b9dbe4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/KnpMenu/zipball/0a7608e6d540d6558e817168329ea4e759b9dbe4",
-                "reference": "0a7608e6d540d6558e817168329ea4e759b9dbe4",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "pimple/pimple": "1.0.*",
-                "silex/silex": "1.0.*",
-                "twig/twig": ">=1.2,<2.0-dev"
-            },
-            "suggest": {
-                "pimple/pimple": "for the built-in implementations of the menu provider and renderer provider",
-                "silex/silex": "for the integration with your silex application",
-                "twig/twig": "for the TwigRenderer and the integration with your templates"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.1-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Knp\\Menu\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Christophe Coevoet",
-                    "email": "stof@notk.org"
-                },
-                {
-                    "name": "Knplabs",
-                    "homepage": "http://knplabs.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://github.com/KnpLabs/KnpMenu/contributors"
-                }
-            ],
-            "description": "An object oriented menu library",
-            "homepage": "http://knplabs.com",
-            "keywords": [
-                "menu",
-                "tree"
-            ],
-            "time": "2015-04-16 19:08:19"
-        },
-        {
-            "name": "knplabs/knp-menu-bundle",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/KnpLabs/KnpMenuBundle.git",
-                "reference": "802e7f67fa3ea6cdaa40bffb96fc5cc83c7c2826"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/KnpMenuBundle/zipball/802e7f67fa3ea6cdaa40bffb96fc5cc83c7c2826",
-                "reference": "802e7f67fa3ea6cdaa40bffb96fc5cc83c7c2826",
-                "shasum": ""
-            },
-            "require": {
-                "knplabs/knp-menu": "~2.0",
-                "symfony/framework-bundle": "~2.3"
-            },
-            "require-dev": {
-                "symfony/expression-language": "~2.4"
-            },
-            "type": "symfony-bundle",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Knp\\Bundle\\MenuBundle\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Christophe Coevoet",
-                    "email": "stof@notk.org"
-                },
-                {
-                    "name": "Knplabs",
-                    "homepage": "http://knplabs.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://github.com/KnpLabs/KnpMenuBundle/contributors"
-                }
-            ],
-            "description": "This bundle provides an integration of the KnpMenu library",
-            "keywords": [
-                "menu"
-            ],
-            "time": "2015-04-16 21:48:00"
-        },
-        {
-            "name": "liip/theme-bundle",
-            "version": "dev-master",
-            "target-dir": "Liip/ThemeBundle",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/liip/LiipThemeBundle.git",
-                "reference": "238322091d1f1d7ceea44720fe46c63e9dc515c4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/liip/LiipThemeBundle/zipball/238322091d1f1d7ceea44720fe46c63e9dc515c4",
-                "reference": "238322091d1f1d7ceea44720fe46c63e9dc515c4",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3",
-                "psr/log": "~1.0",
-                "symfony/framework-bundle": "~2.0"
-            },
-            "require-dev": {
-                "kriswallsmith/assetic": "~1.1",
-                "phpunit/phpunit": "~4.5",
-                "symfony/console": "~2.0",
-                "symfony/expression-language": "~2.6",
-                "twig/twig": "~1.0"
-            },
-            "type": "symfony-bundle",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.2-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Liip\\ThemeBundle": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Community contributions",
-                    "homepage": "https://github.com/liip/LiipThemeBundle/contributors"
-                },
-                {
-                    "name": "Liip AG",
-                    "homepage": "http://www.liip.ch/"
-                }
-            ],
-            "description": "Provides theming support for #Symfony2 Bundles",
-            "keywords": [
-                "themes",
-                "theming"
-            ],
-            "time": "2015-04-23 20:12:08"
-        },
-        {
-            "name": "mopa/bootstrap-sandbox-bundle",
-            "version": "dev-master",
-            "target-dir": "Mopa/Bundle/BootstrapSandboxBundle",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phiamo/MopaBootstrapSandboxBundle.git",
-                "reference": "a3a15b7b719e22948dfcd473640fb9bfdb6d02b6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/phiamo/MopaBootstrapSandboxBundle/zipball/a3a15b7b719e22948dfcd473640fb9bfdb6d02b6",
-                "reference": "a3a15b7b719e22948dfcd473640fb9bfdb6d02b6",
-                "shasum": ""
-            },
-            "require": {
-                "knplabs/knp-menu-bundle": "2.0.x-dev",
-                "liip/theme-bundle": "dev-master",
-                "mopa/bootstrap-bundle": "3.*@dev",
-                "php": ">=5.3.2"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "*"
-            },
-            "type": "symfony-bundle",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Mopa\\Bundle\\BootstrapSandboxBundle": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Community contributions",
-                    "homepage": "https://github.com/phiamo/MopaBootstrapBundle/contributors"
-                },
-                {
-                    "name": "Philipp A. Mohrenweiser",
-                    "email": "phiamo@googlemail.com"
-                }
-            ],
-            "description": "Seperate live docs from code",
-            "keywords": [
-                "bootstrap",
-                "bootstrap form",
-                "extra form",
-                "form",
-                "sandbox",
-                "template"
-            ],
-            "time": "2015-04-28 09:36:46"
-        }
-    ],
+    "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
         "mopa/bootstrap-bundle": 20,
         "mopa/barcode-bundle": 20,
-        "avalanche123/imagine-bundle": 20,
-        "mopa/bootstrap-sandbox-bundle": 20
+        "avalanche123/imagine-bundle": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
